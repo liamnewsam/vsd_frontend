@@ -1,0 +1,93 @@
+@import "variables.css";
+
+
+:root {
+    --option-box-size: 37.8px;
+  }
+
+.editor-container {
+    flex: 1;
+
+    background-color: var(--background-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%;
+}
+
+.editor-hotspot-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--text-dark-color);
+}
+
+.editor-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.editor-option {
+    background-color: var(--background-dark-1-color);
+    border-radius: 4px;
+    margin: 5px;
+    padding: 5px 10px;
+    height: var(--option-box-size);
+    color: var(--text-dark-color);
+
+
+    
+}
+
+.editor-input {
+    border: none;
+    border-bottom: 2px solid var(--border-color);
+    background-color: transparent;
+}
+
+.editor-input:focus {
+    outline: none;
+}
+
+.editor-option-button {
+    position: relative;
+    float: right;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+
+    border: none;
+    border-radius: 20%;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.delete-button {
+    background-color: var(--accent-color);
+
+}
+
+.editor-option-add-list-item {
+    height: 37.8px !important;
+}
+
+.add-button {
+    background-color: var(--secondary-color);
+}
+
+.empty-editor-text {
+    color: var(--text-light-color);
+    height: 100%;
+    /*text-align: center;*/
+    font-size: 2em;
+    
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+}
+

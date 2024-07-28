@@ -1,0 +1,76 @@
+@import "variables.css";
+
+#VSD-image-div {
+    /*display: grid;
+    grid-template-rows: 80% 20%;*/
+    padding: 20px;
+    background-color: var(--background-color);
+
+}
+
+#VSD-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+
+}
+
+#VSD-options-div {
+    padding: 20px;
+
+}
+
+#VSD-options {
+    text-align: center;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+
+}
+
+.vsd-option{
+    height: 100%;
+
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+    /*margin-left: 10px;
+    margin-right: 10px;*/
+}
+
+.canvas {
+    /*background-image: url(../assets/img8.jpg);*/
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 10px;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+    overflow: hidden;
+}
+
+
+
+.tooltip {
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 2em !important;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: opacity 0.5s;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
+  }
+  
