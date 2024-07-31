@@ -65,15 +65,16 @@ function Editor({
                 type="text"
                 value={option}
                 onChange={(e) => {
-                  const updatedHotspots = hotspots.map((hotspot, index) =>
-                    index === hsIndex
-                      ? {
-                          ...hotspot,
-                          options: hotspot.options.map((option, optIndex) =>
-                            optIndex === index ? e.target.value : option
-                          ),
-                        }
-                      : hotspot
+                  const updatedHotspots = hotspots.map(
+                    (hotspot, hotspotIndex) =>
+                      hotspotIndex === hsIndex
+                        ? {
+                            ...hotspot,
+                            options: hotspot.options.map((option, optIndex) =>
+                              optIndex === index ? e.target.value : option
+                            ),
+                          }
+                        : hotspot
                   );
                   setHotspots(updatedHotspots);
                 }}
